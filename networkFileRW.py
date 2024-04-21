@@ -2,6 +2,7 @@
 #Thomas Donaldson
 #GPA8_networkFileRW.py
 #4/7/24
+#4/21/24 Updated for GPA9
 #CIS3524C GPA #8
 #Update routers and switches;
 #read equipment from a file, write updates & errors to file
