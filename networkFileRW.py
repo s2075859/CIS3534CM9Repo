@@ -1,21 +1,27 @@
 #!/usr/bin/env python3
-#networkFileRW.py
-#Pamela Brauda
-#Thursday, March 3, 2022
+#Thomas Donaldson
+#GPA8_networkFileRW.py
+#4/7/24
+#CIS3524C GPA #8
 #Update routers and switches;
 #read equipment from a file, write updates & errors to file
 
 ##---->>>> Use a try/except clause to import the JSON module
-
-
+try:
+    import json
+except ImportError:
+    print("Could not import JSON module.")
 
 ##---->>>> Create file constants for the file names; file constants can be reused
 ##         There are 2 files to read this program: equip_r.txt and equip_s.txt
 ##         There are 2 files to write in this program: updated.txt and errors.txt
       
-
-
-
+EQUIP_R = 'equip_r.txt'
+EQUIP_S = 'equip_s.txt'
+UPDATED = 'updated.txt'
+#Comment above says to use "errors.txt" for output, 
+#but assignment expected output instructs to use "invalid.txt"
+INVALID = 'invalid.txt'
 
 #prompt constants
 UPDATE = "\nWhich device would you like to update "
